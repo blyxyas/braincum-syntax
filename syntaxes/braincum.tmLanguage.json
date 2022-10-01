@@ -1,0 +1,50 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Braincum",
+	"patterns": [
+		{
+			"include": "#entity"
+		},
+		{
+			"include": "#keyword"
+		},
+		{
+			"include": "#comment"
+		}
+	],
+	"repository": {
+		"entity": {
+			"patterns": [{
+				"name": "entity.name.tag",
+				"match": "[#.,!:;?]"
+			},
+			{"name": "entity.name.selector",
+			"match": "[$&]"},
+			{
+				"name": "entity.name.section",
+				"match": "[\\[\\]{}]"
+			},
+			{
+				"name": "entity.name.function",
+				"match": "[rsm]"
+			}]
+		},
+		"keyword": {
+			"patterns": [
+				{
+					"name": "keyword.operator",
+					"match": "[+\\-^@'\\\"><~]"
+				}
+			]
+		},
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "\\((.*?)\\)"
+				}
+			]
+		}
+	},
+	"scopeName": "source.bc"
+}

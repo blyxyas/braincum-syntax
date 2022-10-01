@@ -1,0 +1,25 @@
+{
+    "name": "braincum-syntax",
+    "displayName": "braincum",
+    "description": "Braincum syntax hightlighting",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.71.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "braincum",
+            "aliases": ["Braincum", "braincum"],
+            "extensions": [".bc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "braincum",
+            "scopeName": "source.bc",
+            "path": "./syntaxes/braincum.tmLanguage.json"
+        }]
+    }
+}
