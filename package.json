@@ -6,6 +6,9 @@
     "engines": {
         "vscode": "^1.71.0"
     },
+	"repository": {
+		"url": "https://github.com/blyxyas/braincum-syntax"
+	},
     "categories": [
         "Programming Languages"
     ],
